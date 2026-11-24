@@ -204,9 +204,9 @@ export default function ScrollStory() {
 
                 <g className="temp-badge">
                   <rect
-                    x="62"
+                    x="34"
                     y="88"
-                    width="276"
+                    width="332"
                     height="36"
                     rx="10"
                     fill="#18181b"
@@ -219,7 +219,7 @@ export default function ScrollStory() {
                     textAnchor="middle"
                     fontFamily="Outfit, sans-serif"
                     fontWeight="800"
-                    fontSize="11"
+                    fontSize="10.2"
                     fill="#fdba74"
                   >
                     SELLADO 450°F–500°F · CERO HUMO EN DEPA
@@ -275,16 +275,16 @@ export default function ScrollStory() {
                   strokeWidth="3"
                 />
                 <circle cx="272" cy="258" r="14" fill="#ea580c" />
-                <text x="164" y="262" textAnchor="middle" fontSize="11" fontWeight="800" fill="#e7e5e4">
+                <text x="160" y="262" textAnchor="middle" fontSize="10" fontWeight="800" fill="#e7e5e4">
                   BASE COMPACTA 1200W–1800W
                 </text>
 
                 {/* Bandeja recolectora de grasa lavavajillas */}
                 <g className="drip-tray">
                   <rect
-                    x="98"
+                    x="70"
                     y="304"
-                    width="184"
+                    width="240"
                     height="38"
                     rx="10"
                     fill="#18181b"
@@ -295,7 +295,7 @@ export default function ScrollStory() {
                     x="190"
                     y="327"
                     textAnchor="middle"
-                    fontSize="10.5"
+                    fontSize="10"
                     fontWeight="800"
                     fill="#86efac"
                   >
@@ -319,11 +319,11 @@ export default function ScrollStory() {
                 <g
                   className="phone-alert"
                   opacity="0"
-                  transform="translate(40 18)"
+                  transform="translate(20 18)"
                 >
                   <rect
-                    width="320"
-                    height="48"
+                    width="360"
+                    height="50"
                     rx="14"
                     fill="#ffffff"
                     stroke="#16a34a"

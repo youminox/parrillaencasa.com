@@ -35,7 +35,7 @@ export default function ContactVsOpenGrillSlider() {
     <div className="daynight bg-[#09090b] shadow-[0_40px_80px_-40px_rgba(24,24,27,0.75)]">
       <div
         ref={scene}
-        className="relative aspect-[4/5] cursor-ew-resize select-none sm:aspect-[16/9]"
+        className="relative flex min-h-[430px] sm:min-h-[460px] flex-col justify-between gap-4 overflow-hidden p-4 sm:p-7 cursor-ew-resize select-none"
         onPointerDown={(e) => {
           if (e.pointerType === "mouse") e.preventDefault();
           (e.currentTarget as HTMLElement).setPointerCapture(e.pointerId);
@@ -52,8 +52,8 @@ export default function ContactVsOpenGrillSlider() {
       >
         <svg
           viewBox="0 0 800 450"
-          preserveAspectRatio="xMidYMid slice"
-          className="absolute inset-0 h-full w-full"
+          preserveAspectRatio="none"
+          className="pointer-events-none absolute inset-0 h-full w-full"
           aria-hidden
         >
           <defs>
@@ -80,7 +80,6 @@ export default function ContactVsOpenGrillSlider() {
             fill="url(#cg-heavy)"
             opacity={heavy}
           />
-
           <rect
             x="0"
             y="365"
@@ -88,159 +87,110 @@ export default function ContactVsOpenGrillSlider() {
             height="85"
             fill={heavy > 0.5 ? "#09090b" : "#e7e5e4"}
           />
-
-          {heavy < 0.5 ? (
-            <g>
-              <rect
-                x="195"
-                y="145"
-                width="410"
-                height="195"
-                rx="18"
-                fill="#ffffff"
-                stroke="#ea580c"
-                strokeWidth="4"
-              />
-              <text
-                x="400"
-                y="196"
-                textAnchor="middle"
-                fontFamily="Outfit, sans-serif"
-                fontWeight="800"
-                fontSize="16.5"
-                fill="#c2410c"
-              >
-                🥪 George Foreman GRP4842P / Cuisinart GR-4NP1 (Cerrada)
-              </text>
-              <text
-                x="400"
-                y="230"
-                textAnchor="middle"
-                fontSize="13.5"
-                fontWeight="700"
-                fill="#18181b"
-              >
-                ✓ Cocina pechugas y hamburguesas por ambos lados en 5–6 min
-              </text>
-              <text
-                x="400"
-                y="258"
-                textAnchor="middle"
-                fontSize="13"
-                fontWeight="600"
-                fill="#52525b"
-              >
-                ✓ Ocupa poco espacio (22–34 cm) y se guarda parada en alacena
-              </text>
-              <text
-                x="400"
-                y="286"
-                textAnchor="middle"
-                fontSize="13"
-                fontWeight="700"
-                fill="#16a34a"
-              >
-                ✓ Precio desde US$25–$85 · Placas desmontables al lavavajillas
-              </text>
-            </g>
-          ) : (
-            <g opacity={fullHeavy}>
-              <rect
-                x="185"
-                y="140"
-                width="430"
-                height="205"
-                rx="18"
-                fill="#18181b"
-                stroke="#f97316"
-                strokeWidth="4"
-              />
-              <text
-                x="400"
-                y="194"
-                textAnchor="middle"
-                fontFamily="Outfit, sans-serif"
-                fontWeight="800"
-                fontSize="16.5"
-                fill="#fdba74"
-              >
-                🔥 Ninja Sizzle GR101 / Foodi Smart XL FG551 / Cuisinart 180°
-              </text>
-              <text
-                x="400"
-                y="228"
-                textAnchor="middle"
-                fontSize="13.5"
-                fontWeight="700"
-                fill="#ffffff"
-              >
-                ✓ Sellado steakhouse real a 500 °F sin aplastar cortes gruesos
-              </text>
-              <text
-                x="400"
-                y="256"
-                textAnchor="middle"
-                fontSize="13"
-                fontWeight="600"
-                fill="#d4d4d8"
-              >
-                ✓ 6 a 8 porciones simultáneas en 140–240 sq in (hogar / visitas)
-              </text>
-              <text
-                x="400"
-                y="284"
-                textAnchor="middle"
-                fontSize="13"
-                fontWeight="700"
-                fill="#4ade80"
-              >
-                ✓ Malla antisalpicaduras / aire ciclónico sin humo + Sonda termómetro
-              </text>
-            </g>
-          )}
-
-          <rect
-            x="110"
-            y="354"
-            width="580"
-            height="34"
-            rx="10"
-            fill="#09090b"
-            stroke="#f97316"
-            strokeWidth="2"
-          />
-          <text
-            x="400"
-            y="375"
-            textAnchor="middle"
-            fontFamily="Outfit, sans-serif"
-            fontWeight="800"
-            fontSize="12"
-            fill="#ffedd5"
-          >
-            {heavy > 0.5
-              ? "Ideal para ribeye de 3 cm, salmón, pollo para toda la semana o reuniones en casa"
-              : "Ideal para departamentos chicos, cenas rápidas de 1 a 4 personas y paninis crujientes"}
-          </text>
         </svg>
 
-        <div className="pointer-events-none absolute left-4 top-4 rounded-2xl border border-white/30 bg-zinc-950/65 px-4 py-2 text-white backdrop-blur-md sm:left-6 sm:top-6">
-          <p className="text-[0.68rem] font-bold uppercase tracking-[0.14em] text-white/75">
+        <div className="pointer-events-none relative z-10 max-w-full self-start rounded-2xl border border-white/30 bg-zinc-950/70 px-4 py-2 text-white backdrop-blur-md">
+          <p className="text-[0.68rem] font-bold uppercase tracking-[0.12em] text-white/80 break-words">
             {phase}
           </p>
-          <p className="font-display text-xl sm:text-2xl font-extrabold tabular-nums text-orange-300">
+          <p className="font-display text-lg sm:text-2xl font-extrabold tabular-nums text-orange-300">
             {grillReading}
           </p>
         </div>
-        {!touched && (
-          <div className="pointer-events-none absolute bottom-2 left-1/2 -translate-x-1/2 animate-pulse whitespace-nowrap rounded-full bg-white/95 px-3 py-1.5 text-xs font-semibold text-fxink shadow-lg sm:bottom-5 sm:px-4 sm:py-2 sm:text-sm">
-            ← Arrastra: Contacto Compacta (2–5 Porc.) vs Abierta / XL (6–8 Porc. 500 °F) →
+
+        <div className="pointer-events-none relative z-10 mx-auto w-full max-w-[580px]">
+          {heavy < 0.5 ? (
+            <div className="overflow-hidden rounded-3xl border-[3px] border-[#ea580c] bg-white px-5 py-5 sm:px-7 sm:py-6 shadow-2xl">
+              <span className="inline-block rounded-full bg-orange-100 px-3 py-0.5 text-[11px] font-extrabold uppercase tracking-wider text-[#c2410c]">
+                Formato Contacto · Guardado Vertical
+              </span>
+              <h3 className="mt-2 font-display text-base sm:text-xl font-extrabold leading-snug text-[#c2410c] break-words">
+                🥪 George Foreman GRP4842P / Cuisinart GR-4NP1 (Cerrada)
+              </h3>
+              <ul className="mt-3.5 space-y-2 text-xs sm:text-sm leading-relaxed">
+                <li className="flex items-start gap-2">
+                  <span className="shrink-0 font-extrabold text-[#ea580c]">
+                    ✓
+                  </span>
+                  <span className="font-bold text-zinc-900">
+                    Cocina pechugas y hamburguesas por ambos lados en 5–6 min
+                  </span>
+                </li>
+                <li className="flex items-start gap-2">
+                  <span className="shrink-0 font-extrabold text-zinc-600">
+                    ✓
+                  </span>
+                  <span className="font-semibold text-zinc-600">
+                    Ocupa poco espacio (22–34 cm) y se guarda parada en alacena
+                  </span>
+                </li>
+                <li className="flex items-start gap-2">
+                  <span className="shrink-0 font-extrabold text-[#16a34a]">
+                    ✓
+                  </span>
+                  <span className="font-bold text-[#16a34a]">
+                    Precio desde US$25–$85 · Placas desmontables al lavavajillas
+                  </span>
+                </li>
+              </ul>
+            </div>
+          ) : (
+            <div
+              style={{ opacity: Math.max(0.25, fullHeavy) }}
+              className="overflow-hidden rounded-3xl border-[3px] border-[#f97316] bg-[#18181b] px-5 py-5 sm:px-7 sm:py-6 text-white shadow-2xl"
+            >
+              <span className="inline-block rounded-full bg-orange-500/20 border border-orange-400/40 px-3 py-0.5 text-[11px] font-extrabold uppercase tracking-wider text-orange-300">
+                Formato Abierto / Smart XL · 500 °F Sin Humo
+              </span>
+              <h3 className="mt-2 font-display text-base sm:text-xl font-extrabold leading-snug text-[#fdba74] break-words">
+                🔥 Ninja Sizzle GR101 / Foodi Smart XL FG551 / Cuisinart 180°
+              </h3>
+              <ul className="mt-3.5 space-y-2 text-xs sm:text-sm leading-relaxed">
+                <li className="flex items-start gap-2">
+                  <span className="shrink-0 font-extrabold text-orange-400">
+                    ✓
+                  </span>
+                  <span className="font-bold text-white">
+                    Sellado steakhouse real a 500 °F sin aplastar cortes gruesos
+                  </span>
+                </li>
+                <li className="flex items-start gap-2">
+                  <span className="shrink-0 font-extrabold text-zinc-300">
+                    ✓
+                  </span>
+                  <span className="font-semibold text-zinc-300">
+                    6 a 8 porciones simultáneas en 140–240 sq in (hogar / visitas)
+                  </span>
+                </li>
+                <li className="flex items-start gap-2">
+                  <span className="shrink-0 font-extrabold text-[#4ade80]">
+                    ✓
+                  </span>
+                  <span className="font-bold text-[#4ade80]">
+                    Malla antisalpicaduras / aire ciclónico sin humo + Sonda termómetro
+                  </span>
+                </li>
+              </ul>
+            </div>
+          )}
+        </div>
+
+        <div className="pointer-events-none relative z-10 mx-auto flex w-full max-w-[620px] flex-col items-center gap-2">
+          <div className="w-full rounded-xl border-2 border-[#f97316] bg-[#09090b]/95 px-4 py-2 text-center font-display text-xs sm:text-sm font-bold leading-snug text-[#ffedd5]">
+            {heavy > 0.5
+              ? "Ideal para ribeye de 3 cm, salmón, pollo para toda la semana o reuniones en casa"
+              : "Ideal para departamentos chicos, cenas rápidas de 1 a 4 personas y paninis crujientes"}
           </div>
-        )}
+          {!touched && (
+            <div className="max-w-full animate-pulse rounded-full bg-white/95 px-3.5 py-1.5 text-center text-[11px] sm:text-xs font-semibold leading-snug text-fxink shadow-lg">
+              ← Arrastra para comparar: Contacto Compacta vs Abierta / XL 500 °F →
+            </div>
+          )}
+        </div>
       </div>
-      <div className="flex items-center gap-4 bg-[#09090b] px-5 py-4 text-white sm:px-7">
-        <span className="text-xs font-bold whitespace-nowrap text-orange-200">
-          🥪 Compacta (2–5 Porc.)
+      <div className="flex items-center gap-2.5 sm:gap-4 bg-[#09090b] px-4 py-3.5 text-white sm:px-7 sm:py-4">
+        <span className="text-xs font-bold shrink-0 text-orange-200">
+          🥪 Compacta<span className="hidden sm:inline"> (2–5 Porc.)</span>
         </span>
         <label className="sr-only" htmlFor="grill-range">
           Comparador entre parrilla de contacto y abierta sin humo
@@ -257,8 +207,8 @@ export default function ContactVsOpenGrillSlider() {
           }}
           aria-valuetext={`${phase}, ${grillReading}`}
         />
-        <span className="text-xs font-bold whitespace-nowrap text-fxlime">
-          🔥 Abierta / XL (6–8 Porc.)
+        <span className="text-xs font-bold shrink-0 text-fxlime">
+          🔥 Abierta XL<span className="hidden sm:inline"> (6–8 Porc.)</span>
         </span>
       </div>
     </div>

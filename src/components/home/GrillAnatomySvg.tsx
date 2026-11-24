@@ -2,11 +2,11 @@
 export default function GrillAnatomySvg() {
   const strands = Array.from({ length: 8 }).map((_, i) => {
     const a = (i / 8) * Math.PI * 2 + 0.25;
-    const x1 = 200 + Math.cos(a) * 38;
+    const x1 = 220 + Math.cos(a) * 38;
     const y1 = 210 + Math.sin(a) * 38;
-    const x2 = 200 + Math.cos(a) * 128;
+    const x2 = 220 + Math.cos(a) * 128;
     const y2 = 210 + Math.sin(a) * 128;
-    const mx = 200 + Math.cos(a + 0.4) * 84;
+    const mx = 220 + Math.cos(a + 0.4) * 84;
     const my = 210 + Math.sin(a + 0.4) * 84;
     return `M${x1.toFixed(1)} ${y1.toFixed(1)} Q${mx.toFixed(1)} ${my.toFixed(1)} ${x2.toFixed(1)} ${y2.toFixed(1)}`;
   });
@@ -14,7 +14,7 @@ export default function GrillAnatomySvg() {
   return (
     <div className="gel-scene relative mx-auto aspect-square w-full max-w-[460px]">
       <svg
-        viewBox="0 0 400 420"
+        viewBox="0 0 440 420"
         className="h-full w-full"
         role="img"
         aria-label="Diagrama técnico de anatomía de una parrilla eléctrica sin humo para departamento: resistencia térmica, zona fría de grasa, placas desmontables y accesorios"
@@ -32,9 +32,9 @@ export default function GrillAnatomySvg() {
           </linearGradient>
         </defs>
 
-        <circle cx="200" cy="210" r="188" fill="url(#ga-halo)" />
+        <circle cx="220" cy="210" r="188" fill="url(#ga-halo)" />
         <circle
-          cx="200"
+          cx="220"
           cy="210"
           r="148"
           fill="none"
@@ -42,7 +42,7 @@ export default function GrillAnatomySvg() {
           strokeDasharray="4 7"
         />
         <circle
-          cx="200"
+          cx="220"
           cy="210"
           r="102"
           fill="none"
@@ -66,15 +66,15 @@ export default function GrillAnatomySvg() {
 
         {/* Núcleo central: Placa Sear + Sin Humo */}
         <circle
-          cx="200"
+          cx="220"
           cy="210"
-          r="54"
+          r="60"
           fill="#18181b"
           stroke="url(#ga-core)"
           strokeWidth="4"
         />
         <text
-          x="200"
+          x="220"
           y="204"
           textAnchor="middle"
           fontFamily="Outfit, sans-serif"
@@ -85,7 +85,7 @@ export default function GrillAnatomySvg() {
           SISTEMA
         </text>
         <text
-          x="200"
+          x="220"
           y="222"
           textAnchor="middle"
           fontFamily="Inter, sans-serif"
@@ -97,52 +97,52 @@ export default function GrillAnatomySvg() {
         </text>
 
         {/* Etiquetas técnicas */}
-        <g fontFamily="Inter, sans-serif" fontSize="10.5" fontWeight="700">
-          <g transform="translate(10 34)">
+        <g fontFamily="Inter, sans-serif" fontSize="9.8" fontWeight="700">
+          <g transform="translate(8 32)">
             <rect
-              width="184"
-              height="28"
-              rx="14"
+              width="204"
+              height="30"
+              rx="15"
               fill="rgba(234,88,12,0.22)"
               stroke="rgba(251,146,60,0.65)"
             />
-            <text x="92" y="18" textAnchor="middle" fill="#fed7aa">
+            <text x="102" y="19" textAnchor="middle" fill="#fed7aa">
               🔥 Placa Sellado 450°F–500°F
             </text>
           </g>
-          <g transform="translate(204 48)">
+          <g transform="translate(228 46)">
             <rect
-              width="186"
-              height="28"
-              rx="14"
+              width="204"
+              height="30"
+              rx="15"
               fill="rgba(22,163,74,0.22)"
               stroke="rgba(74,222,128,0.65)"
             />
-            <text x="93" y="18" textAnchor="middle" fill="#bbf7d0">
+            <text x="102" y="19" textAnchor="middle" fill="#bbf7d0">
               💧 Zona Fría: Grasa No Humea
             </text>
           </g>
-          <g transform="translate(14 336)">
+          <g transform="translate(8 336)">
             <rect
-              width="180"
-              height="28"
-              rx="14"
+              width="204"
+              height="30"
+              rx="15"
               fill="rgba(51,65,85,0.45)"
               stroke="rgba(148,163,184,0.65)"
             />
-            <text x="90" y="18" textAnchor="middle" fill="#e2e8f0">
+            <text x="102" y="19" textAnchor="middle" fill="#e2e8f0">
               🧼 Placas al Lavavajillas
             </text>
           </g>
-          <g transform="translate(202 366)">
+          <g transform="translate(228 366)">
             <rect
-              width="188"
-              height="28"
-              rx="14"
+              width="204"
+              height="30"
+              rx="15"
               fill="rgba(234,88,12,0.28)"
               stroke="rgba(253,186,116,0.65)"
             />
-            <text x="94" y="18" textAnchor="middle" fill="#ffedd5">
+            <text x="102" y="19" textAnchor="middle" fill="#ffedd5">
               🌡️ Pinzas Silicona + Termómetro
             </text>
           </g>
