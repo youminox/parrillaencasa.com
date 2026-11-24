@@ -1,0 +1,74 @@
+[
+  {
+    "slug": "resenas-parrillas-electricas",
+    "name": "Reseñas de Parrillas Eléctricas",
+    "icon": "grill",
+    "description": "Análisis reales de modelos George Foreman, Cuisinart, Hamilton Beach y Ninja en Amazon EE. UU. según precio, espacio, porciones y facilidad de limpieza."
+  },
+  {
+    "slug": "comparativas-parrillas-electricas",
+    "name": "Comparativas Modelo vs Modelo",
+    "icon": "scale",
+    "description": "Duelos directos entre parrillas de contacto, abiertas sin humo y Smart XL evaluando dimensiones, porciones reales, sellado a 500 °F y limpieza."
+  },
+  {
+    "slug": "parrillas-por-espacio-porciones-y-precio",
+    "name": "Por Espacio, Porciones y Precio",
+    "icon": "tag",
+    "description": "Rankings de compra en Amazon Estados Unidos desde menos de US$35 hasta gama XL, filtrados para estudios, departamentos sin campana y familias."
+  },
+  {
+    "slug": "placas-de-repuesto-y-compatibilidad",
+    "name": "Placas de Repuesto y Compatibilidad",
+    "icon": "plate",
+    "description": "Guías exactas para comprar placas grill, plancha, waffles, mallas antisalpicaduras y bandejas compatibles con tu modelo George Foreman, Cuisinart o Ninja."
+  },
+  {
+    "slug": "pinzas-termometros-y-accesorios-parrilla",
+    "name": "Pinzas, Termómetros y Accesorios",
+    "icon": "tongs",
+    "description": "Selección de pinzas con punta de silicona, termómetros digitales instantáneos o Bluetooth, raspadores anti-rayones y tapetes protectores en Amazon."
+  },
+  {
+    "slug": "control-de-humo-ventilacion-y-departamentos",
+    "name": "Control de Humo en Departamentos",
+    "icon": "smoke",
+    "description": "Cómo asar en casa y departamentos sin activar alarmas de humo: puntos de humo de aceites, bandejas con agua, ventilación y normativas de edificios."
+  },
+  {
+    "slug": "espacio-medidas-consumo-y-voltaje",
+    "name": "Espacio, Medidas, Consumo y Voltaje",
+    "icon": "ruler",
+    "description": "Dimensiones reales sobre encimera, altura bajo gabinetes de 18 pulgadas, consumo eléctrico en watts y cómo usar equipos 110V de Amazon en 220V."
+  },
+  {
+    "slug": "porciones-superficie-y-tiempos-de-coccion",
+    "name": "Porciones, Superficie y Tiempos",
+    "icon": "timer",
+    "description": "Cuántas carnes caben de verdad en 72, 100, 140 y 200 pulgadas cuadradas, tiempos en parrilla de contacto vs abierta y temperaturas internas por término."
+  },
+  {
+    "slug": "cortes-carnes-aves-pescados-y-verduras",
+    "name": "Cortes, Aves, Pescados y Verduras",
+    "icon": "steak",
+    "description": "Técnica exacta en parrilla eléctrica interior para ribeye, entraña, hamburguesas, pechuga jugosa, salmón con piel, mariscos, vegetales y paninis."
+  },
+  {
+    "slug": "limpieza-antiadherentes-y-cuidado-de-placas",
+    "name": "Limpieza y Cuidado de Placas",
+    "icon": "clean",
+    "description": "Limpieza rápida de placas fijas con vapor y regla de oro para placas desmontables en lavavajillas sin dañar el recubrimiento cerámico o PTFE."
+  },
+  {
+    "slug": "uso-seguro-de-pinzas-termometros-y-accesorios",
+    "name": "Uso de Pinzas y Termómetros",
+    "icon": "thermo",
+    "description": "Cómo medir temperatura lateral en cortes delgados, calibrar sondas en agua con hielo y elegir utensilios de silicona que prolongan el antiadherente."
+  },
+  {
+    "slug": "mantenimiento-solucion-de-fallas-y-compra-en-amazon",
+    "name": "Mantenimiento, Fallas y Compra en Amazon",
+    "icon": "shield",
+    "description": "Soluciones si la parrilla calienta desigual, salta el interruptor GFCI, falla la sonda o pierde antiadherencia, más envío AmazonGlobal e impuestos."
+  }
+]
