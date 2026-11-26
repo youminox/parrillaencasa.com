@@ -17,8 +17,6 @@ export interface AmazonProductRecommendation {
   title: string;
   subtitle: string;
   features: string[];
-  rating: string;
-  reviewsCount: string;
   categoryType: AmazonCategoryType;
   specs?: {
     priceRange: string;
@@ -94,11 +92,9 @@ export const CATALOG: Record<string, AmazonProductRecommendation> = {
       "Placas desmontables sin PFOA aptas para lavavajillas con botón de liberación en frío",
       "Bisagra flotante que se ajusta al grosor de cortes gruesos o paninis y guardado vertical compacto",
     ],
-    rating: "4.6",
-    reviewsCount: "28.400+",
     categoryType: "contact-grill",
     specs: {
-      priceRange: "US$45 – US$65 en Amazon EE. UU.",
+      priceRange: "Consultar precio y ofertas hoy en Amazon",
       footprintSpace: "31.5 × 26.5 × 14.5 cm (se guarda en vertical)",
       servingsCapacity: "4 a 5 porciones simultáneas (72 sq in)",
       cleaningEase: "Placas desmontables 100 % aptas lavavajillas",
@@ -111,7 +107,7 @@ export const CATALOG: Record<string, AmazonProductRecommendation> = {
 
   GF_GRS040B: {
     id: "george-foreman-grs040b",
-    badge: "🏢 #1 Ultracompacta para Estudios y 1–2 Personas (< US$30)",
+    badge: "🏢 #1 Ultracompacta para Estudios y 1–2 Personas",
     title:
       "George Foreman 2-Serving Classic Plate Electric Indoor Grill & Panini Press (GRS040B / GRS040R)",
     subtitle:
@@ -121,11 +117,9 @@ export const CATALOG: Record<string, AmazonProductRecommendation> = {
       "Cocción simultánea superior e inferior de 2 pechugas, 2 hamburguesas o 1 sándwich grande",
       "Recubrimiento George Tough clásico que se limpia en 60 segundos con papel húmedo tibio",
     ],
-    rating: "4.6",
-    reviewsCount: "41.200+",
     categoryType: "contact-grill",
     specs: {
-      priceRange: "US$22 – US$32 en Amazon EE. UU.",
+      priceRange: "Consultar precio y ofertas hoy en Amazon",
       footprintSpace: "22.3 × 18.0 × 9.8 cm (ultracompacta)",
       servingsCapacity: "1 a 2 porciones simultáneas (36 sq in)",
       cleaningEase: "Placas fijas · limpieza rápida en 1 minuto con paño",
@@ -137,7 +131,7 @@ export const CATALOG: Record<string, AmazonProductRecommendation> = {
 
   GF_GRP1060B: {
     id: "george-foreman-grp1060b",
-    badge: "🥪 Económica 4 Porciones para Parejas y Estudiantes (< US$40)",
+    badge: "🥪 Económica 4 Porciones para Parejas y Estudiantes",
     title:
       "George Foreman 4-Serving Classic Plate Grill & Panini Press (GRP1060B / GRS060B)",
     subtitle:
@@ -147,11 +141,9 @@ export const CATALOG: Record<string, AmazonProductRecommendation> = {
       "Luz indicadora de precalentamiento óptimo y carcasa compacta liviana (< 2.3 kg)",
       "Incluye bandeja recolectora de grasa apta para lavavajillas",
     ],
-    rating: "4.6",
-    reviewsCount: "19.300+",
     categoryType: "contact-grill",
     specs: {
-      priceRange: "US$30 – US$42 en Amazon EE. UU.",
+      priceRange: "Consultar precio y ofertas hoy en Amazon",
       footprintSpace: "27.4 × 24.1 × 11.4 cm (cabe bajo gabinetes de 18\")",
       servingsCapacity: "3 a 4 porciones simultáneas (60 sq in)",
       cleaningEase: "Placas fijas antiadherentes + bandeja lavavajillas",
@@ -173,11 +165,9 @@ export const CATALOG: Record<string, AmazonProductRecommendation> = {
       "Ángulo de inclinación ajustable (inclinada para drenar grasa o plana para paninis y tortillas)",
       "Pantalla digital con control exacto de temperatura hasta 500 °F (Sear) y timer",
     ],
-    rating: "4.6",
-    reviewsCount: "8.400+",
     categoryType: "contact-grill",
     specs: {
-      priceRange: "US$89 – US$119 en Amazon EE. UU.",
+      priceRange: "Consultar precio y ofertas hoy en Amazon",
       footprintSpace: "34.3 × 28.0 × 15.2 cm",
       servingsCapacity: "5 porciones simultáneas (72+ sq in)",
       cleaningEase: "Placas cerámicas desmontables aptas lavavajillas",
@@ -199,11 +189,9 @@ export const CATALOG: Record<string, AmazonProductRecommendation> = {
       "Control digital táctil preciso con superficie amplia abierta para 5 a 6 porciones",
       "Ideal si prefieres ver los cortes mientras se asan sin aplastar ingredientes delicados",
     ],
-    rating: "4.5",
-    reviewsCount: "5.200+",
     categoryType: "smokeless-open",
     specs: {
-      priceRange: "US$69 – US$99 en Amazon EE. UU.",
+      priceRange: "Consultar precio y ofertas hoy en Amazon",
       footprintSpace: "42.0 × 30.5 × 12.7 cm",
       servingsCapacity: "5 a 6 porciones simultáneas (90+ sq in)",
       cleaningEase: "Rejilla abierta y bandeja aptas para lavavajillas",
@@ -225,11 +213,9 @@ export const CATALOG: Record<string, AmazonProductRecommendation> = {
       "Sonda térmica regulable en 5 niveles hasta 1600 W sin carbón ni cilindros de gas",
       "Recubrimiento antiadherente George Tough con bandeja central de grasa extraíble",
     ],
-    rating: "4.6",
-    reviewsCount: "18.100+",
     categoryType: "smart-xl",
     specs: {
-      priceRange: "US$105 – US$139 en Amazon EE. UU.",
+      priceRange: "Consultar precio y ofertas hoy en Amazon",
       footprintSpace: "52 × 46 cm sobre mesa (pedestal desmontable)",
       servingsCapacity: "10 a 15 porciones simultáneas (240 sq in)",
       cleaningEase: "Rejilla circular desmontable + bandeja extraíble",
@@ -252,11 +238,9 @@ export const CATALOG: Record<string, AmazonProductRecommendation> = {
       "Placas reversibles antiadherentes libres de BPA aptas para lavavajillas con canal de drenaje integrado",
       "Al abrirse plana alcanza 200 sq in reales (6 a 8 porciones simultáneas)",
     ],
-    rating: "4.7",
-    reviewsCount: "26.900+",
     categoryType: "griddler-180",
     specs: {
-      priceRange: "US$79 – US$109 en Amazon EE. UU.",
+      priceRange: "Consultar precio y ofertas hoy en Amazon",
       footprintSpace: "34.3 × 29.2 × 18.0 cm (cerrada; requiere 60 cm abierta)",
       servingsCapacity: "4 porciones cerrada / 6–8 porciones abierta 180°",
       cleaningEase: "Placas reversibles + bandeja de goteo 100 % lavavajillas",
@@ -278,11 +262,9 @@ export const CATALOG: Record<string, AmazonProductRecommendation> = {
       "Usa el mismo ecosistema de placas reversibles y placas de waffles GR-WAFP de Cuisinart",
       "Carcasa de acero inoxidable cepillado fácil de limpiar por fuera",
     ],
-    rating: "4.6",
-    reviewsCount: "6.400+",
     categoryType: "griddler-180",
     specs: {
-      priceRange: "US$95 – US$125 en Amazon EE. UU.",
+      priceRange: "Consultar precio y ofertas hoy en Amazon",
       footprintSpace: "34.0 × 30.0 × 18.0 cm",
       servingsCapacity: "4 porciones cerrada / 6–8 porciones abierta 180°",
       cleaningEase: "Placas reversibles desmontables aptas lavavajillas",
@@ -304,11 +286,9 @@ export const CATALOG: Record<string, AmazonProductRecommendation> = {
       "Placas antiadherentes reversibles grill y plancha aptas para lavavajillas",
       "Bandeja recolectora trasera oculta para una encimera limpia",
     ],
-    rating: "4.5",
-    reviewsCount: "2.900+",
     categoryType: "griddler-180",
     specs: {
-      priceRange: "US$129 – US$169 en Amazon EE. UU.",
+      priceRange: "Consultar precio y ofertas hoy en Amazon",
       footprintSpace: "36.5 × 33.5 × 17.5 cm",
       servingsCapacity: "4 a 8 porciones según modo cerrado/180°",
       cleaningEase: "Placas extraíbles lavavajillas + drenaje oculto",
@@ -330,11 +310,9 @@ export const CATALOG: Record<string, AmazonProductRecommendation> = {
       "Botón SearBlast a 500 °F (260 °C) durante 2 minutos para marcar ribeye, entraña o bife ancho",
       "240 sq in abiertas a 180° (6 a 8 porciones reales en una sola tanda)",
     ],
-    rating: "4.7",
-    reviewsCount: "9.800+",
     categoryType: "griddler-180",
     specs: {
-      priceRange: "US$145 – US$185 en Amazon EE. UU.",
+      priceRange: "Consultar precio y ofertas hoy en Amazon",
       footprintSpace: "37.2 × 36.8 × 20.5 cm (ocupa encimera mediana-grande)",
       servingsCapacity: "6 porciones cerrada / 8+ porciones abierta 180°",
       cleaningEase: "Placas reversibles pesadas aptas para lavavajillas",
@@ -356,11 +334,9 @@ export const CATALOG: Record<string, AmazonProductRecommendation> = {
       "Control dual independiente de placas superior e inferior con función Sear a 500 °F",
       "Placas desmontables reversibles y bandeja trasera 100 % lavavajillas",
     ],
-    rating: "4.6",
-    reviewsCount: "4.100+",
     categoryType: "griddler-180",
     specs: {
-      priceRange: "US$169 – US$219 en Amazon EE. UU.",
+      priceRange: "Consultar precio y ofertas hoy en Amazon",
       footprintSpace: "37.8 × 36.6 × 20.6 cm",
       servingsCapacity: "6 a 8 porciones simultáneas",
       cleaningEase: "Placas reversibles + recolector lavavajillas",
@@ -373,7 +349,7 @@ export const CATALOG: Record<string, AmazonProductRecommendation> = {
   // === HAMILTON BEACH ===
   HB_25361_SEARING: {
     id: "hamilton-beach-25361",
-    badge: "💨 #1 Sellado Sin Humo Económica con Tapa Ventana (< US$85)",
+    badge: "💨 #1 Sellado Sin Humo Económica con Tapa Ventana",
     title:
       "Hamilton Beach Electric Indoor Searing Grill with Viewing Window & Hood (25361 / 25360)",
     subtitle:
@@ -383,11 +359,9 @@ export const CATALOG: Record<string, AmazonProductRecommendation> = {
       "Tapa con ventana de cristal desmontable para vigilar el dorado sin soltar humo ni calor",
       "118 sq in reales (hasta 6 porciones); tapa, rejilla antiadherente y bandeja XL van directo al lavavajillas",
     ],
-    rating: "4.6",
-    reviewsCount: "23.500+",
     categoryType: "smokeless-open",
     specs: {
-      priceRange: "US$69 – US$89 en Amazon EE. UU.",
+      priceRange: "Consultar precio y ofertas hoy en Amazon",
       footprintSpace: "42.5 × 31.5 × 17.3 cm (requiere 18\" libres arriba al abrir)",
       servingsCapacity: "4 a 6 porciones simultáneas (118 sq in)",
       cleaningEase: "Tapa, rejilla y bandeja XL aptas para lavavajillas",
@@ -409,11 +383,9 @@ export const CATALOG: Record<string, AmazonProductRecommendation> = {
       "Bandeja inferior extraíble de ancho completo que recoge grasa y reduce humos",
       "Placas intercambiables y reversibles aptas para lavavajillas",
     ],
-    rating: "4.5",
-    reviewsCount: "4.900+",
     categoryType: "smokeless-open",
     specs: {
-      priceRange: "US$79 – US$109 en Amazon EE. UU.",
+      priceRange: "Consultar precio y ofertas hoy en Amazon",
       footprintSpace: "52.0 × 31.0 × 10.5 cm (perfil bajo para guardar)",
       servingsCapacity: "6 a 8 porciones simultáneas (180 sq in)",
       cleaningEase: "Placas extraíbles y bandeja aptas para lavavajillas",
@@ -425,7 +397,7 @@ export const CATALOG: Record<string, AmazonProductRecommendation> = {
 
   HB_25460A_PANINI: {
     id: "hamilton-beach-25460a",
-    badge: "🥖 Prensa Compacta de Contacto Económica (< US$40)",
+    badge: "🥖 Prensa Compacta de Contacto Económica",
     title:
       "Hamilton Beach Electric Panini Press Grill & Gourmet Sandwich Maker (25460A / 25462Z)",
     subtitle:
@@ -435,11 +407,9 @@ export const CATALOG: Record<string, AmazonProductRecommendation> = {
       "Bisagra flotante superior para prensar uniformemente desde 1 hasta 8 cm de grosor",
       "Luces indicadoras de encendido y listo + recubrimiento antiadherente rápido de limpiar",
     ],
-    rating: "4.6",
-    reviewsCount: "18.700+",
     categoryType: "contact-grill",
     specs: {
-      priceRange: "US$32 – US$44 en Amazon EE. UU.",
+      priceRange: "Consultar precio y ofertas hoy en Amazon",
       footprintSpace: "31.5 × 26.2 × 11.4 cm (almacenamiento vertical)",
       servingsCapacity: "2 a 3 porciones simultáneas (65 sq in)",
       cleaningEase: "Placas fijas de limpieza rápida con paño húmedo",
@@ -462,11 +432,9 @@ export const CATALOG: Record<string, AmazonProductRecommendation> = {
       "Tapa perforada de malla lavable en lavavajillas que reduce drásticamente salpicaduras y humo en cocina",
       "Calentamiento homogéneo sin puntos fríos y placa antiadherente muy fácil de lavar",
     ],
-    rating: "4.7",
-    reviewsCount: "7.600+",
     categoryType: "smokeless-open",
     specs: {
-      priceRange: "US$109 – US$139 en Amazon EE. UU.",
+      priceRange: "Consultar precio y ofertas hoy en Amazon",
       footprintSpace: "37.6 × 36.1 × 15.2 cm (muy compacta para su capacidad)",
       servingsCapacity: "4 a 6 porciones familiares (14\" / ~140 sq in)",
       cleaningEase: "Placa antiadherente y malla tapa aptas lavavajillas",
@@ -488,11 +456,9 @@ export const CATALOG: Record<string, AmazonProductRecommendation> = {
       "Aire ciclónico de 500 °F alrededor de una rejilla grill de alta densidad para 6 bistecs o 24 hot dogs",
       "Rejilla cerámica sin PTFE/PFOA, cesta freidora y olla interior 100 % aptas para lavavajillas",
     ],
-    rating: "4.8",
-    reviewsCount: "19.800+",
     categoryType: "smart-xl",
     specs: {
-      priceRange: "US$199 – US$249 en Amazon EE. UU.",
+      priceRange: "Consultar precio y ofertas hoy en Amazon",
       footprintSpace: "40.0 × 42.0 × 28.0 cm (ojo: 47 cm con tapa abierta)",
       servingsCapacity: "6 porciones familiares grandes (XL)",
       cleaningEase: "Rejilla cerámica y filtro antisalpicaduras al lavavajillas",
@@ -514,11 +480,9 @@ export const CATALOG: Record<string, AmazonProductRecommendation> = {
       "Sistema Smart Cook integrado con termómetro de carne dual",
       "Piezas cerámicas desmontables sin PFOA aptas para lavavajillas",
     ],
-    rating: "4.7",
-    reviewsCount: "5.400+",
     categoryType: "smart-xl",
     specs: {
-      priceRange: "US$229 – US$289 en Amazon EE. UU.",
+      priceRange: "Consultar precio y ofertas hoy en Amazon",
       footprintSpace: "40.0 × 44.0 × 28.5 cm (encimera mediana-amplia)",
       servingsCapacity: "6 a 8 porciones familiares",
       cleaningEase: "Rejilla, plancha y malla lavables en lavavajillas",
@@ -540,11 +504,9 @@ export const CATALOG: Record<string, AmazonProductRecommendation> = {
       "Filtro de humo integrado en tapa abatible fácil de desenganchar y lavar",
       "Incluye funciones de asar a la parrilla, freír con aire, rostizar y hornear",
     ],
-    rating: "4.8",
-    reviewsCount: "16.900+",
     categoryType: "smart-xl",
     specs: {
-      priceRange: "US$149 – US$189 en Amazon EE. UU.",
+      priceRange: "Consultar precio y ofertas hoy en Amazon",
       footprintSpace: "36.0 × 40.0 × 25.0 cm",
       servingsCapacity: "4 porciones (AG301) a 6 porciones (DG551)",
       cleaningEase: "Piezas cerámicas desmontables 100 % lavavajillas",
@@ -567,11 +529,9 @@ export const CATALOG: Record<string, AmazonProductRecommendation> = {
       "Set GR-4NP1P incluye 2 placas reversibles (lado grill acanalado + lado plancha liso)",
       "Libres de BPA y aptas para lavavajillas (también disponible set de waffles GR-WAFP)",
     ],
-    rating: "4.7",
-    reviewsCount: "4.800+",
     categoryType: "replacement-plate",
     specs: {
-      priceRange: "US$29 – US$49 (el par) en Amazon EE. UU.",
+      priceRange: "Consultar precio y ofertas hoy en Amazon",
       footprintSpace: "29.2 × 22.9 cm por placa (almacenamiento plano)",
       servingsCapacity: "Compatible con 4 a 8 porciones (GR-4NP1 / GR-5B)",
       cleaningEase: "Recubrimiento antiadherente nuevo · aptas lavavajillas",
@@ -594,11 +554,9 @@ export const CATALOG: Record<string, AmazonProductRecommendation> = {
       "Permite tener un juego extra listo mientras el otro está en el lavavajillas",
       "Canal posterior compatible con la bandeja recolectora integrada",
     ],
-    rating: "4.6",
-    reviewsCount: "1.900+",
     categoryType: "replacement-plate",
     specs: {
-      priceRange: "US$38 – US$65 en Amazon EE. UU.",
+      priceRange: "Consultar precio y ofertas hoy en Amazon",
       footprintSpace: "Formato ancho exclusivo serie Deluxe / Elite",
       servingsCapacity: "Compatible 6 a 8 porciones",
       cleaningEase: "Desmontables 100 % aptas lavavajillas",
@@ -620,11 +578,9 @@ export const CATALOG: Record<string, AmazonProductRecommendation> = {
       "Rejillas cerámicas libres de PTFE/PFOA con ajuste exacto sin holguras",
       "Sondas termómetro Smart Cook compatibles cuando el cable original falla",
     ],
-    rating: "4.7",
-    reviewsCount: "6.100+",
     categoryType: "replacement-plate",
     specs: {
-      priceRange: "US$19 – US$55 según pieza en Amazon EE. UU.",
+      priceRange: "Consultar precio y ofertas hoy en Amazon",
       footprintSpace: "Verificar código exacto (GR101 vs FG551 vs AG301)",
       servingsCapacity: "Estándar 4 a 6 porciones según modelo Ninja",
       cleaningEase: "Piezas cerámicas y mallas aptas para lavavajillas",
@@ -647,11 +603,9 @@ export const CATALOG: Record<string, AmazonProductRecommendation> = {
       "Incluye tapete de silicona resistente al calor para aislar mesas de madera o melamina",
       "Apta para rejilla superior del lavavajillas",
     ],
-    rating: "4.6",
-    reviewsCount: "3.700+",
     categoryType: "replacement-plate",
     specs: {
-      priceRange: "US$11 – US$29 en Amazon EE. UU.",
+      priceRange: "Consultar precio y ofertas hoy en Amazon",
       footprintSpace: "Medidas universales (medir ancho de salida frontal)",
       servingsCapacity: "Compatible 2, 4, 5 y 15 porciones George Foreman",
       cleaningEase: "Plástico resistente al calor apto para lavavajillas",
@@ -675,11 +629,9 @@ export const CATALOG: Record<string, AmazonProductRecommendation> = {
       "Brazo de acero inoxidable cepillado con seguro de cierre para guardar en cualquier cajón",
       "Tamaño 9\" ideal para parrillas compactas de contacto y 12\" para Ninja XL a 500 °F",
     ],
-    rating: "4.8",
-    reviewsCount: "34.500+",
     categoryType: "tongs-thermometer",
     specs: {
-      priceRange: "US$14 – US$22 en Amazon EE. UU.",
+      priceRange: "Consultar precio y ofertas hoy en Amazon",
       footprintSpace: "23 cm (9\") o 30 cm (12\") cerradas en cajón",
       servingsCapacity: "Apta para toda carne, pollo, pescado y paninis",
       cleaningEase: "Cuerpo sellado 100 % apto para lavavajillas",
@@ -701,11 +653,9 @@ export const CATALOG: Record<string, AmazonProductRecommendation> = {
       "Imán trasero para pegarlo a la campana o refrigeradora, más resistencia al agua IP65",
       "Garantiza pollo jugoso (165 °F / 74 °C) y ribeye Medium Rare (130–135 °F / 54–57 °C)",
     ],
-    rating: "4.8",
-    reviewsCount: "62.100+",
     categoryType: "tongs-thermometer",
     specs: {
-      priceRange: "US$19 – US$29 en Amazon EE. UU.",
+      priceRange: "Consultar precio y ofertas hoy en Amazon",
       footprintSpace: "Plegable tamaño bolsillo (16 cm cerrada)",
       servingsCapacity: "Esencial en parrillas sin sonda integrada",
       cleaningEase: "Cuerpo impermeable IP65 · se lava bajo el chorro",
@@ -727,11 +677,9 @@ export const CATALOG: Record<string, AmazonProductRecommendation> = {
       "Cero cables que estorben o muerdan las bisagras flotantes de parrillas de contacto",
       "Alertas automáticas en iOS/Android con cálculo de tiempo de reposo",
     ],
-    rating: "4.6",
-    reviewsCount: "14.200+",
     categoryType: "tongs-thermometer",
     specs: {
-      priceRange: "US$59 – US$99 en Amazon EE. UU.",
+      priceRange: "Consultar precio y ofertas hoy en Amazon",
       footprintSpace: "Estuche cargador compacto de bambú/plástico",
       servingsCapacity: "Ideal para cortes gruesos y pechugas enteras",
       cleaningEase: "Sonda de acero inoxidable impermeable apta lavavajillas",
@@ -754,11 +702,9 @@ export const CATALOG: Record<string, AmazonProductRecommendation> = {
       "Raspador de nylon térmico con dientes curvos diseñado para encajar en las estrías del grill",
       "Incluye espátula ranurada y brocha de silicona sin BPA para salsas",
     ],
-    rating: "4.7",
-    reviewsCount: "19.400+",
     categoryType: "tongs-thermometer",
     specs: {
-      priceRange: "US$15 – US$26 en Amazon EE. UU.",
+      priceRange: "Consultar precio y ofertas hoy en Amazon",
       footprintSpace: "Cabe en cualquier cajón o puerta de alacena",
       servingsCapacity: "Compatible con las 4 marcas principales",
       cleaningEase: "Apto para lavavajillas; duplica la vida útil de placas",

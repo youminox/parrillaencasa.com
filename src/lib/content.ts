@@ -143,30 +143,15 @@ const PILLAR_SCENE_POOLS: Record<string, string[]> = {
   ],
 };
 
-function resolveArticleImage(
-  a: Article,
-  pillarCountMap: Map<string, number>
-): string {
+function resolveArticleImage(a: Article): string {
   const imgArt = path.join(PUBLIC, "img/articulos", `${a.slug}.webp`);
   if (fs.existsSync(imgArt)) {
     return `/img/articulos/${a.slug}.webp`;
   }
-  if (a.isPillar) {
-    const imgCat = path.join(PUBLIC, "img/ambiente", `cat-${a.pillar}.webp`);
-    if (fs.existsSync(imgCat)) return `/img/ambiente/cat-${a.pillar}.webp`;
-  }
-  const idx = pillarCountMap.get(a.pillar) || 0;
-  pillarCountMap.set(a.pillar, idx + 1);
-  const pool = PILLAR_SCENE_POOLS[a.pillar] || ["home-hero-parrillas"];
-  const candidate = pool[idx % pool.length];
-  const candidatePath = path.join(PUBLIC, "img/ambiente", `${candidate}.webp`);
-  if (fs.existsSync(candidatePath)) {
-    return `/img/ambiente/${candidate}.webp`;
-  }
   const imgAmb = path.join(PUBLIC, "img/ambiente", `cat-${a.pillar}.webp`);
   return fs.existsSync(imgAmb)
     ? `/img/ambiente/cat-${a.pillar}.webp`
-    : `/img/ambiente/home-hero-parrillas.webp`;
+    : `/img/ambiente/og-default.webp`;
 }
 
 export function getAllContent(): Article[] {
@@ -183,7 +168,7 @@ export function getAllContent(): Article[] {
       const a = JSON.parse(fs.readFileSync(path.join(DIR, f), "utf8"));
       if (!isValidArticle(a) || seen.has(a.path)) continue;
       seen.add(a.path);
-      const imageUrl = resolveArticleImage(a, pillarCountMap);
+      const imageUrl = resolveArticleImage(a);
       list.push({
         ...a,
         isPillar: Boolean(a.isPillar),

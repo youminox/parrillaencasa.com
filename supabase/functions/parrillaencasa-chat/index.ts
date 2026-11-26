@@ -61,20 +61,16 @@ const AMAZON_PRODUCTS: Record<string, AmazonProductCard> = {
       "George Foreman 5-Serving Removable Plate Electric Indoor Grill & Panini Press (GRP4842P)",
     subtitle:
       "72 sq in (4–5 porciones), placas antiadherentes George Tough desmontables aptas para lavavajillas, diseño inclinado que drena la grasa y ahorro máximo de espacio en encimeras.",
-    rating: "4.6",
-    reviewsCount: "28.400+",
     urlUS: `https://www.amazon.com/s?k=${encodeURIComponent("George Foreman 5-Serving Removable Plate Electric Grill GRP4842P")}&tag=${AMAZON_TAG_US}`,
     urlES: `https://www.amazon.es/s?k=${encodeURIComponent("George Foreman parrilla electrica placas extraibles")}&tag=${AMAZON_TAG_ES}`,
   },
   "george-foreman-grs040b": {
     id: "george-foreman-grs040b",
-    badge: "🏢 #1 Ultracompacta para Estudios y 1–2 Personas (< US$30)",
+    badge: "🏢 #1 Ultracompacta para Estudios y 1–2 Personas",
     title:
       "George Foreman 2-Serving Classic Plate Electric Indoor Grill & Panini Press (GRS040B / GRS040R)",
     subtitle:
       "Ocupa apenas 22 × 18 cm (guardado vertical en cualquier alacena), ideal para 2 pechugas o 2 hamburguesas rápidas en departamentos pequeños.",
-    rating: "4.6",
-    reviewsCount: "41.200+",
     urlUS: `https://www.amazon.com/s?k=${encodeURIComponent("George Foreman 2-Serving Classic Plate Electric Grill GRS040B")}&tag=${AMAZON_TAG_US}`,
     urlES: `https://www.amazon.es/s?k=${encodeURIComponent("George Foreman parrilla compacta 2 porciones")}&tag=${AMAZON_TAG_ES}`,
   },
@@ -85,8 +81,6 @@ const AMAZON_PRODUCTS: Record<string, AmazonProductCard> = {
       "Cuisinart 5-in-1 Griddler Stainless Steel Electric Indoor Grill, Griddle & Panini Press (GR-4NP1)",
     subtitle:
       "Se abre plana a 180° (hasta 200 sq in / 6–8 porciones en modo abierto), placas reversibles grill/plancha sin BPA aptas para lavavajillas y control dual de temperatura.",
-    rating: "4.7",
-    reviewsCount: "26.900+",
     urlUS: `https://www.amazon.com/s?k=${encodeURIComponent("Cuisinart GR-4NP1 5-in-1 Griddler Electric Indoor Grill")}&tag=${AMAZON_TAG_US}`,
     urlES: `https://www.amazon.es/s?k=${encodeURIComponent("Cuisinart Griddler parrilla electrica 5 en 1")}&tag=${AMAZON_TAG_ES}`,
   },
@@ -97,20 +91,16 @@ const AMAZON_PRODUCTS: Record<string, AmazonProductCard> = {
       "Cuisinart Griddler Deluxe Brushed Stainless Contact Grill & 180° Griddle (GR-150P1)",
     subtitle:
       "Control independiente para placa superior e inferior, función SearBlast de 500 °F (260 °C) para sellar ribeye o lomo fino y 240 sq in abierta.",
-    rating: "4.7",
-    reviewsCount: "9.800+",
     urlUS: `https://www.amazon.com/s?k=${encodeURIComponent("Cuisinart GR-150P1 Griddler Deluxe Electric Grill")}&tag=${AMAZON_TAG_US}`,
     urlES: `https://www.amazon.es/s?k=${encodeURIComponent("Cuisinart GR-150 Griddler Deluxe parrilla contacto")}&tag=${AMAZON_TAG_ES}`,
   },
   "hamilton-beach-25361": {
     id: "hamilton-beach-25361",
-    badge: "💨 Mejor Sellado Sin Humo Económica con Tapa Ventana (< US$85)",
+    badge: "💨 Mejor Sellado Sin Humo Económica con Tapa Ventana",
     title:
       "Hamilton Beach Electric Indoor Searing Grill with Viewing Window & Hood (25361 / 25360)",
     subtitle:
       "Alcanza 450 °F (232 °C) para marcar cortes con mínimo humo, 118 sq in (hasta 6 porciones) y tanto la tapa como la rejilla y bandeja de goteo van al lavavajillas.",
-    rating: "4.6",
-    reviewsCount: "23.500+",
     urlUS: `https://www.amazon.com/s?k=${encodeURIComponent("Hamilton Beach Electric Indoor Searing Grill 25361")}&tag=${AMAZON_TAG_US}`,
     urlES: `https://www.amazon.es/s?k=${encodeURIComponent("Hamilton Beach parrilla electrica interior tapa cristal")}&tag=${AMAZON_TAG_ES}`,
   },
@@ -121,8 +111,6 @@ const AMAZON_PRODUCTS: Record<string, AmazonProductCard> = {
       "Hamilton Beach 3-in-1 Electric Smokeless Indoor Grill & Griddle (38546 — 180 sq in)",
     subtitle:
       "Dos placas reversibles independientes con control de temperatura dual y bandeja inferior de grasa apta para lavavajillas (6–8 porciones).",
-    rating: "4.5",
-    reviewsCount: "4.900+",
     urlUS: `https://www.amazon.com/s?k=${encodeURIComponent("Hamilton Beach 3-in-1 Indoor Grill Griddle 38546")}&tag=${AMAZON_TAG_US}`,
     urlES: `https://www.amazon.es/s?k=${encodeURIComponent("parrilla y plancha electrica doble zona sin humo")}&tag=${AMAZON_TAG_ES}`,
   },
@@ -133,8 +121,6 @@ const AMAZON_PRODUCTS: Record<string, AmazonProductCard> = {
       "Ninja Sizzle Smokeless Indoor Grill & Flat-Top Griddle (GR101 — hasta 500 °F)",
     subtitle:
       "Calentamiento uniforme de borde a borde hasta 500 °F, malla perforada antisalpicaduras desmontable y placa antiadherente intercambiable para 4–6 hamburguesas o cortes.",
-    rating: "4.7",
-    reviewsCount: "7.600+",
     urlUS: `https://www.amazon.com/s?k=${encodeURIComponent("Ninja GR101 Sizzle Smokeless Indoor Grill and Griddle")}&tag=${AMAZON_TAG_US}`,
     urlES: `https://www.amazon.es/s?k=${encodeURIComponent("Ninja Sizzle GR101 parrilla electrica sin humo")}&tag=${AMAZON_TAG_ES}`,
   },
@@ -145,8 +131,6 @@ const AMAZON_PRODUCTS: Record<string, AmazonProductCard> = {
       "Ninja Foodi Smart XL 6-in-1 Indoor Grill with Smart Cook System Thermometer (FG551 / IG651)",
     subtitle:
       "Cocina prácticamente sin humo a 500 °F con aire ciclónico + sonda termómetro integrada para clavar el término exacto de 6 bistecs o 24 hot dogs, con rejilla cerámica apta lavavajillas.",
-    rating: "4.8",
-    reviewsCount: "19.800+",
     urlUS: `https://www.amazon.com/s?k=${encodeURIComponent("Ninja FG551 Foodi Smart XL 6-in-1 Indoor Grill")}&tag=${AMAZON_TAG_US}`,
     urlES: `https://www.amazon.es/s?k=${encodeURIComponent("Ninja Foodi Smart XL parrilla electrica sin humo")}&tag=${AMAZON_TAG_ES}`,
   },
@@ -157,8 +141,6 @@ const AMAZON_PRODUCTS: Record<string, AmazonProductCard> = {
       "Placas de Repuesto Compatibles (Cuisinart GR-4NP1P / Waffles GR-WAFP · Ninja Sizzle GR101 · Ninja Foodi FG551 · Bandejas George Foreman)",
     subtitle:
       "Renueva tu parrilla en minutos con placas reversibles grill/plancha, placas para waffles, mallas antisalpicaduras y bandejas recolectoras compatibles en Amazon EE. UU.",
-    rating: "4.7",
-    reviewsCount: "8.900+",
     urlUS: `https://www.amazon.com/s?k=${encodeURIComponent("Cuisinart GR-4NP1 replacement grill plates Ninja Sizzle GR101 replacement plate")}&tag=${AMAZON_TAG_US}`,
     urlES: `https://www.amazon.es/s?k=${encodeURIComponent("placas repuesto parrilla electrica Cuisinart Ninja George Foreman")}&tag=${AMAZON_TAG_ES}`,
   },
@@ -169,8 +151,6 @@ const AMAZON_PRODUCTS: Record<string, AmazonProductCard> = {
       "OXO Good Grips 9\" & 12\" Silicone-Tipped Locking Tongs (Resistentes hasta 600 °F / 315 °C)",
     subtitle:
       "Puntas de silicona blanda que protegen el recubrimiento cerámico y PTFE de George Foreman, Cuisinart, Hamilton Beach y Ninja sin perforar los jugos de la carne.",
-    rating: "4.8",
-    reviewsCount: "34.500+",
     urlUS: `https://www.amazon.com/s?k=${encodeURIComponent("OXO Good Grips Silicone Tipped Tongs 9 inch 12 inch")}&tag=${AMAZON_TAG_US}`,
     urlES: `https://www.amazon.es/s?k=${encodeURIComponent("OXO Good Grips pinzas cocina silicona antiadherente")}&tag=${AMAZON_TAG_ES}`,
   },
@@ -181,8 +161,6 @@ const AMAZON_PRODUCTS: Record<string, AmazonProductCard> = {
       "ThermoPro TP19H Waterproof Digital Instant-Read Meat Thermometer (o Inalámbrico TempSpike)",
     subtitle:
       "Lectura ultrarrápida para saber exactamente cuándo retirar ribeye, pechuga de pollo, cerdo o salmón sin abrir la tapa de más ni secar tus cortes.",
-    rating: "4.8",
-    reviewsCount: "62.100+",
     urlUS: `https://www.amazon.com/s?k=${encodeURIComponent("ThermoPro TP19H Digital Meat Thermometer Instant Read")}&tag=${AMAZON_TAG_US}`,
     urlES: `https://www.amazon.es/s?k=${encodeURIComponent("ThermoPro termometro cocina digital lectura instantanea carne")}&tag=${AMAZON_TAG_ES}`,
   },

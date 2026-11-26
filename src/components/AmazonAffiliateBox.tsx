@@ -146,16 +146,6 @@ export default function AmazonAffiliateBox({
         aria-label="Recomendación destacada de parrilla eléctrica en Amazon"
         className="my-8 rounded-3xl border-2 border-[#ea580c]/45 bg-gradient-to-br from-[#faf8f5] via-white to-[#ffedd5]/75 p-5 sm:p-7 shadow-[0_20px_50px_-28px_rgba(234,88,12,0.32)]"
       >
-        <div className="flex flex-wrap items-center justify-between gap-2 pb-4 border-b border-[var(--line)]">
-          <div className="flex flex-wrap items-center gap-2">
-            <span className="inline-flex items-center gap-1.5 rounded-full bg-[#18181b] px-3 py-1 text-xs font-extrabold text-[#fdba74]">
-              {primaryProduct.badge}
-            </span>
-            <span className="inline-flex items-center gap-1 rounded-full bg-orange-100 px-2.5 py-0.5 text-xs font-bold text-orange-950">
-              ★★★★★ {primaryProduct.rating}/5 ({primaryProduct.reviewsCount}{" "}
-              opiniones)
-            </span>
-          </div>
           <RegionSwitch />
         </div>
 
@@ -177,7 +167,7 @@ export default function AmazonAffiliateBox({
               <div className="mt-4 grid grid-cols-1 sm:grid-cols-2 gap-2.5 rounded-2xl bg-white/95 border border-[var(--line)] p-3.5 text-xs">
                 <div>
                   <span className="font-extrabold text-[#c2410c] uppercase block">
-                    💵 Precio en Amazon EE. UU.
+                    🛒 Disponibilidad en Amazon
                   </span>
                   <span className="text-zinc-800 font-semibold">
                     {primaryProduct.specs.priceRange}
@@ -267,23 +257,6 @@ export default function AmazonAffiliateBox({
           <RegionSwitch />
         </div>
 
-        <div className="mt-5 grid gap-4 md:grid-cols-2">
-          {contenders.map((item, idx) => {
-            const url = buildAmazonUrl(item, region);
-            return (
-              <div
-                key={item.id + idx}
-                className="flex flex-col justify-between rounded-2xl bg-white/95 p-5 text-zinc-900 border border-orange-300/40"
-              >
-                <div>
-                  <div className="flex items-center justify-between gap-2">
-                    <span className="rounded-full bg-orange-100 px-2.5 py-0.5 text-[11px] font-extrabold text-orange-950">
-                      {idx === 0 ? "Opción #1 Destacada" : "Alternativa Directa"}
-                    </span>
-                    <span className="text-xs font-bold text-orange-700">
-                      ★ {item.rating}/5 ({item.reviewsCount})
-                    </span>
-                  </div>
                   <h4 className="mt-2.5 font-display text-lg font-extrabold leading-snug">
                     {item.title}
                   </h4>
@@ -293,7 +266,7 @@ export default function AmazonAffiliateBox({
                   {item.specs && (
                     <div className="mt-3 space-y-1 rounded-xl bg-[#faf8f5] p-3 text-xs border border-stone-200">
                       <p>
-                        <strong>💵 Precio:</strong> {item.specs.priceRange}
+                        <strong>🛒 Disponibilidad:</strong> {item.specs.priceRange}
                       </p>
                       <p>
                         <strong>📐 Espacio:</strong> {item.specs.footprintSpace}
@@ -358,21 +331,6 @@ export default function AmazonAffiliateBox({
                 </p>
               )}
             </div>
-          </div>
-          <div className="shrink-0 sm:w-56">
-            <a
-              href={url}
-              target="_blank"
-              rel="nofollow sponsored noopener noreferrer"
-              onClick={() => onAmazonClick(primaryProduct, "inline")}
-              className="inline-flex w-full items-center justify-center gap-2 rounded-xl bg-gradient-to-r from-[#ea580c] to-[#c2410c] px-4 py-3.5 font-display text-xs sm:text-sm font-extrabold text-white shadow-md hover:brightness-110 transition"
-            >
-              <span>Consultar en {shortStore}</span>
-              <span aria-hidden>→</span>
-            </a>
-            <p className="mt-1 text-center text-[11px] text-zinc-500">
-              ★ {primaryProduct.rating}/5 ({primaryProduct.reviewsCount})
-            </p>
           </div>
         </div>
       </aside>
@@ -467,28 +425,6 @@ export default function AmazonAffiliateBox({
         <RegionSwitch />
       </div>
 
-      <div className="mt-6 grid gap-5 lg:grid-cols-3">
-        {products.map((prod, idx) => {
-          const url = buildAmazonUrl(prod, region);
-          const roleLabels = [
-            "1. Parrilla Eléctrica Principal",
-            "2. Placa de Repuesto / Alternativa",
-            "3. Pinzas / Termómetro Compatible",
-          ];
-          return (
-            <div
-              key={prod.id + idx}
-              className="flex flex-col justify-between rounded-2xl bg-white text-zinc-900 p-5 shadow-lg border border-white/20"
-            >
-              <div>
-                <div className="flex items-center justify-between gap-2">
-                  <span className="rounded-full bg-zinc-900 px-2.5 py-0.5 text-[10px] font-extrabold text-orange-300">
-                    {roleLabels[idx] || prod.badge}
-                  </span>
-                  <span className="text-xs font-extrabold text-orange-700">
-                    ★ {prod.rating} ({prod.reviewsCount})
-                  </span>
-                </div>
                 <h3 className="mt-3 font-display text-lg font-extrabold leading-snug text-zinc-900">
                   {prod.title}
                 </h3>
@@ -499,7 +435,7 @@ export default function AmazonAffiliateBox({
                 {prod.specs && (
                   <div className="mt-3 rounded-xl bg-[#faf8f5] border border-stone-200 p-2.5 text-[11px] space-y-1">
                     <p>
-                      <strong className="text-orange-800">Precio:</strong>{" "}
+                      <strong className="text-orange-800">Disponibilidad:</strong>{" "}
                       {prod.specs.priceRange}
                     </p>
                     <p>
